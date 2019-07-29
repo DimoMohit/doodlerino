@@ -2,9 +2,11 @@
 
 <% if @doodles.count.positive? %>
   <% @doodles.each do |doodle| %>
-    <%= image_tag doodle.path %>
-    <%= doodle.description %>
-    <%= doodle.created_at.to_formatted_s(:long_ordinal) %>
+    <div>
+      <%= image_tag doodle.path %>
+      <%= doodle.description %>
+      <%= doodle.created_at.to_formatted_s(:long_ordinal) %>
+    </div>
   <% end %>
 <% else %>
   <h3>Uh-oh, <%= @user.name %> hasn't been doodling at all :(</h3>

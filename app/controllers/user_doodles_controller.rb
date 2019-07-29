@@ -1,7 +1,7 @@
 class UserDoodlesController < ApplicationController
   before_action :set_user
 
-  def index
+  def show
     @doodles = [] # TODO: Let's show some doodles
   end
 

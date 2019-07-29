@@ -1,0 +1,6 @@
+<% @doodles.each do |doodle| %>
+  <div>
+    <%= image_tag doodle.path %>
+    <p><%= doodle.description %></p>
+  </div>
+<% end %>

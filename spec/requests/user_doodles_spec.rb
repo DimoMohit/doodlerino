@@ -4,7 +4,7 @@ RSpec.describe 'User doodles', type: :request do
   let(:user) { create :user }
 
   before do
-    get '/test'
+    get "/profile/#{user.id}"
   end
 
   context 'when user has no doodles' do

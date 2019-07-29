@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get 'test', to: 'user_doodles#index'
+  get '/canvas', to: 'doodles#index'
+  get '/profile/:id', to: 'user_doodles#show'
 end
