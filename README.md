@@ -12,4 +12,4 @@ Doodles are generated from a mobile app (out of this application scope) and are 
 
 ## Your quest
 
-By running `rspec`, you'll see that there are 3 failed specs. Your task is to make them pass. 
+By running `rspec`, you'll see that there are 8 failed specs. Your task is to make them pass. 
