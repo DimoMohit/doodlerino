@@ -10,6 +10,17 @@ Doodles are generated from a mobile app (out of this application scope) and are 
   - Social media (if any)
   - Doodles by this user
 
+In `app/models/doodle.rb` you will have to implement the `Doodle.bounded_by` method. This method accepts two arguments, the top left corner and the bottom right corner coordinates of a rectangle.
+
+![Bounded by canvas](canvas.png)
+
 ## Your quest
 
-By running `rspec`, you'll see that there are 8 failed specs. Your task is to make them pass. 
+There are 4 failing spec files:
+
+- `spec/models/user_spec.rb`
+- `spec/models/doodle_spec.rb`
+- `spec/requests/user_doodles_spec.rb`
+- `spec/requests/doodles_spec.rb`
+
+Your task is to make them pass. 
