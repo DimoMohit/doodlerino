@@ -7,10 +7,12 @@ RSpec.describe 'Doodles', type: :request do
   before do
     3.times do |i|
       # TODO: set the coordinates of the following doodles to be between 10 and 20
-      Doodle.create(path: path, description: "Good doodle ##{i}")
+      Doodle.create!(path: path, description: "Good doodle ##{i}",
+        x_coordinate: 10, y_coordinate: 20, user: user)
     end
 
-    Doodle.create(path: path, description: "Bad doodle")
+    Doodle.create!(path: path, description: "Bad doodle",
+      x_coordinate: 30, y_coordinate: 30, user: user)
 
     # The coords passed to the following URL are:
     # { "top": { "x": 10, "y": 10 }, "bottom": { "x": 20, "y": 20 } }

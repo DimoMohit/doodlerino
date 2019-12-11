@@ -14,9 +14,10 @@ RSpec.describe 'User doodles', type: :request do
   end
 
   context 'when user has doodled before' do
-    let(:doodle) { create :doodle }
+    let!(:doodle) { create :doodle, user: user }
 
     it 'renders doodles' do
+      get "/profile/#{user.id}"
       expect(response.body).to include(doodle.description)
     end
   end
